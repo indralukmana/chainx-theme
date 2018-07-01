@@ -120,6 +120,26 @@ function chainx_fonts_url() {
 	return esc_url_raw( $fonts_url );
 }
 
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since Twenty Seventeen 1.0
+ *
+ * @param array  $urls           URLs to print for resource hints.
+ * @param string $relation_type  The relation type the URLs are printed.
+ * @return array $urls           URLs to print for resource hints.
+ */
+function chainx_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'chainx-theme-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'chainx_resource_hints', 10, 2 );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
