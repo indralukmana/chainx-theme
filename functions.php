@@ -120,6 +120,9 @@ add_action( 'widgets_init', 'chainx_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chainx_scripts() {
+    
+        wp_enqueue_style( 'chainx-theme-fonts', 'https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,900');
+        
 	wp_enqueue_style( 'chainx-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'chainx-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
