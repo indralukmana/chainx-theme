@@ -92,9 +92,9 @@ function chainx_fonts_url() {
 	 * into your own language.
 	 */
         
-	$source_sans_pro = _x( 'off', 'Source Sans Pro font: on or off', 'chainx' );
+	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'chainx' );
         
-        $pt_serif = _x( 'off', 'PT Serif font: on or off', 'chainx' );
+        $pt_serif = _x( 'on', 'PT Serif font: on or off', 'chainx' );
 
         $font_families = array();
         
