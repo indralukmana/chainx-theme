@@ -897,6 +897,12 @@ a:hover, a:active {
 	min-height: 65px;
 }
 
+.custom-logo-link img {
+	display: block;
+	height: 65px;
+	width: auto;
+}
+
 .site-title {
 	margin: 0;
 	padding: 0;
@@ -1017,11 +1023,6 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-}
-
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-	display: inline-block;
 }
 
 /*--------------------------------------------------------------
