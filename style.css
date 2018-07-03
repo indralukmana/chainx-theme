@@ -968,7 +968,8 @@ button.dropdown-toggle {
 	right: 0;
 	border: none;
 	background: inherit;
-	color: white;
+	color: black;
+	background: white;
 	line-height: 1.5em;
 	padding: .4em 1em .4em .5em;
 }
@@ -982,7 +983,8 @@ button.dropdown-toggle {
 	padding: .6em .8em;
 	font-size: 80%;
 	text-transform: uppercase;
-	color: white;
+	color: black;
+	background: white;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
