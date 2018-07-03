@@ -1039,6 +1039,7 @@ button.dropdown-toggle {
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	color: #fff;
 	background-color: #0099ff;
+	text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -1057,6 +1058,8 @@ button.dropdown-toggle {
 	-ms-flex-pack: center;
 	    justify-content: center;
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .social-menu ul a {
