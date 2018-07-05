@@ -1083,6 +1083,26 @@ button.dropdown-toggle {
 	margin: 0 0 1.5em;
 }
 
+.entry-header {
+	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.cat-links {
+	font-size: 90%;
+	font-weight: 700;
+}
+
+.cat-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+}
+
+.cat-links a:hover, .cat-links a:focus {
+	background: red;
+	color: white;
+}
+
 .updated:not(.published) {
 	display: none;
 }

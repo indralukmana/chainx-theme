@@ -10,6 +10,24 @@
 	font-family: $font__sans;
 }
 
+.cat-links {
+	font-size: 90%;
+	font-weight: 700;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+
+		color: $color__interactive;
+
+		&:hover,
+		&:focus {
+			background: $color__interactive;
+			color: white;
+		}
+	}
+}
+
 .updated:not(.published) {
 	display: none;
 }
