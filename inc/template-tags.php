@@ -105,14 +105,19 @@ if ( ! function_exists( 'chainx_entry_footer' ) ) :
 	}
 endif;
 
-function chainx_category_list(){
-	/* translators: used between list items, there is a space after the comma */
-	$categories_list = get_the_category_list( esc_html__( ', ', 'chainx' ) );
-	if ( $categories_list ) {
-		/* translators: 1: list of categories. */
-		printf( '<span class="cat-links">' . esc_html__( '%1$s', 'chainx' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+if ( ! function_exists('chainx_post_thumbnail') ) :
+	/**
+	 * Displays category lists
+	 */
+	function chainx_category_list(){
+		/* translators: used between list items, there is a space after the comma */
+		$categories_list = get_the_category_list( esc_html__( ', ', 'chainx' ) );
+		if ( $categories_list ) {
+			/* translators: 1: list of categories. */
+			printf( '<span class="cat-links">' . esc_html__( '%1$s', 'chainx' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		}
 	}
-}
+endif;
 
 if ( ! function_exists( 'chainx_post_thumbnail' ) ) :
 	/**
