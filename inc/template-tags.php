@@ -26,7 +26,7 @@ if ( ! function_exists( 'chainx_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'published on %s', 'post date', 'chainx' ),
+			esc_html_x( 'Published on %s', 'post date', 'chainx' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 

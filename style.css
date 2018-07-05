@@ -1123,6 +1123,27 @@ button.dropdown-toggle {
 	border-bottom: 5px solid;
 }
 
+.entry-meta {
+	font-size: 90%;
+}
+
+.entry-meta a {
+	font-weight: 700;
+	text-decoration: none;
+	color: black;
+}
+
+.entry-meta a:hover, .entry-meta a:focus {
+	border-bottom: 3px solid;
+}
+
+.byline::after,
+.posted-on::after,
+.comments-link::after {
+	content: "|";
+	margin: 0 .5em;
+}
+
 .updated:not(.published) {
 	display: none;
 }

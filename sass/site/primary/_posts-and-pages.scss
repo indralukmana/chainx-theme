@@ -48,6 +48,31 @@
 	}
 }
 
+.entry-meta{
+	font-size: 90%;
+
+	a {
+		font-weight: 700;
+		text-decoration: none;
+		color: black;
+
+		&:hover,
+		&:focus {
+			border-bottom: 3px solid;
+		}
+	}
+}
+
+.byline,
+.posted-on,,
+.comments-link
+ {
+	&::after {
+		content: "|";
+		margin: 0 .5em;
+	}
+}
+
 .updated:not(.published) {
 	display: none;
 }
