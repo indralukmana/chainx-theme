@@ -28,6 +28,8 @@
 				chainx_posted_on();
 				echo " ";
 				chainx_post_comments();
+				echo " ";
+				chainx_edit_link();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

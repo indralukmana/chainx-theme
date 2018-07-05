@@ -66,6 +66,15 @@ if ( ! function_exists( 'chainx_entry_footer' ) ) :
 				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'chainx' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
+	}
+endif;
+
+if ( ! function_exists('chainx_edit_link') ):
+	/**
+	 * Link to edit post
+	 */
+
+	function chainx_edit_link(){
 
 		edit_post_link(
 			sprintf(
