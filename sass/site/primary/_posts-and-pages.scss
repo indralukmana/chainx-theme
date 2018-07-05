@@ -28,6 +28,26 @@
 	}
 }
 
+.entry-title {
+	margin: .125em 0 .25em;
+	font-size:2.5em;
+
+	@media screen and ($query__medium){
+		font-size: 3em;
+		
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+
+		&:hover,
+		&:focus {
+			border-bottom: 5px solid;
+		}
+	}
+}
+
 .updated:not(.published) {
 	display: none;
 }
