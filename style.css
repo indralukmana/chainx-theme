@@ -1292,6 +1292,10 @@ object {
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 90%;
+	color: black;
+	text-align: center;
 }
 
 .wp-caption img[class*="wp-image-"] {
