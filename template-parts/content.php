@@ -23,8 +23,9 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				chainx_posted_on();
 				chainx_posted_by();
+				echo " ";
+				chainx_posted_on();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
