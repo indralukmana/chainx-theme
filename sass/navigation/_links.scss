@@ -17,3 +17,21 @@ a {
 		outline: 0;
 	}
 }
+
+.page-content,
+.entry-content,
+.entry-summary,
+.comment-content {
+
+	a {
+		text-decoration: none;
+		border-bottom: 3px solid;
+
+		&:focus,
+		&:hover{
+			color: $color__interactive;
+		}
+
+	}
+
+}

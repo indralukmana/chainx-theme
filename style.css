@@ -385,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: black;
 	font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -636,15 +636,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
 }
 
 a:visited {
-	color: purple;
+	color: black;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: blue;
 }
 
 a:focus {
@@ -653,6 +653,24 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.comment-content a {
+	text-decoration: none;
+	border-bottom: 3px solid;
+}
+
+.page-content a:focus, .page-content a:hover,
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.comment-content a:focus,
+.comment-content a:hover {
+	color: blue;
 }
 
 /*--------------------------------------------------------------
@@ -706,7 +724,7 @@ a:hover, a:active {
 	clip: auto !important;
 	-webkit-clip-path: none;
 	        clip-path: none;
-	color: #21759b;
+	color: black;
 	display: block;
 	font-size: 17.5px;
 	font-size: 1.09375rem;
@@ -1095,11 +1113,11 @@ button.dropdown-toggle {
 .cat-links a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: red;
+	color: blue;
 }
 
 .cat-links a:hover, .cat-links a:focus {
-	background: red;
+	background: blue;
 	color: white;
 }
 
