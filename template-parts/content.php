@@ -26,6 +26,8 @@
 				chainx_posted_by();
 				echo " ";
 				chainx_posted_on();
+				echo " ";
+				chainx_post_comments();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
