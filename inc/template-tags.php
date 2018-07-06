@@ -178,14 +178,14 @@ if ( ! function_exists( 'chainx_post_navigation') ):
 	 */
 	function chainx_post_navigation(){
 		the_post_navigation( array(
-			'next_text'	=>	'<span class="meta-nav" aria-hidden="true">' . __('Next', 'chainx') . '</span>' 
+			'next_text'	=>	'<span class="meta-nav" aria-hidden="true">' . __('Next ', 'chainx') . '</span>' 
 							.
-							'<span class="screen-reader-text">' . __('Next post:', 'chainx') . '</span>'
+							'<span class="screen-reader-text">' . __('Next post: ', 'chainx') . '</span>'
 							.
 							'<span class="post-title">%title</span>',
-			'prev_text'	=>	'<span class="meta-nav" aria-hidden="true">' . __('Previous', 'chainx') . '</span>' 
+			'prev_text'	=>	'<span class="meta-nav" aria-hidden="true">' . __('Previous ', 'chainx') . '</span>' 
 							.
-							'<span class="screen-reader-text">' . __('Previous post:', 'chainx') . '</span>'
+							'<span class="screen-reader-text">' . __('Previous post: ', 'chainx') . '</span>'
 							.
 							'<span class="post-title">%title</span>',
 
