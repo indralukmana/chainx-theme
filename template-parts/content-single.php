@@ -19,7 +19,7 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) :
+		if ( is_active_sidebar('sidebar-1') ) :
 			?>
 			<div class="entry-meta">
 				<?php
@@ -35,6 +35,24 @@
 	<?php chainx_post_thumbnail(); ?>
 
 	<section class="post-content">
+
+	<?php if ( ! is_active_sidebar('sidebar-1') ) : ?>
+	
+		<div class="post_content__wrap">
+
+		<div class="entry-meta">
+			<?php
+			chainx_posted_by();
+			chainx_posted_on();
+			chainx_post_comments();
+			chainx_edit_link();
+			?>
+		</div><!-- .entry-meta -->
+
+		<div class="post_content__body">
+
+	<?php endif; ?>
+
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
@@ -60,6 +78,14 @@
 	<footer class="entry-footer">
 		<?php chainx_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
+	<?php if ( ! is_active_sidebar('sidebar-1') ) : ?>
+	
+		</div> <!-- post_content__body -->
+
+		</div> <!-- post_content__wrap -->
+
+	<?php endif; ?>
 
 	<?php 
 		chainx_post_navigation();

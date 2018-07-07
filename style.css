@@ -964,6 +964,21 @@ a:hover, a:active {
 	}
 }
 
+@media screen and (min-width: 900px) {
+	.no-sidebar .post_content__wrap {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
+	}
+	.no-sidebar .post_content__wrap .entry-meta {
+		width: 20%;
+	}
+	.no-sidebar .post_content__wrap .post-content__body {
+		width: 70%;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -1330,6 +1345,43 @@ button.dropdown-toggle {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/* Styling for Meta on single post with no sidebar */
+.no-sidebar .entry-meta {
+	margin-top: 1.5em;
+}
+
+@media screen and (min-width: 900px) {
+	.no-sidebar .entry-meta {
+		margin-top: 2.25em;
+		font-size: 80%;
+	}
+	.no-sidebar .entry-meta a {
+		font-size: 110%;
+		display: block;
+		border-bottom: 3px solid white;
+	}
+	.no-sidebar .entry-meta a:hover, .no-sidebar .entry-meta a:focus {
+		border-bottom-color: blue;
+	}
+	.no-sidebar .byline,
+	.no-sidebar .posted-on,
+	.no-sidebar .comments-link,
+	.no-sidebar .edit-link {
+		display: block;
+		margin-bottom: 1em;
+	}
+	.no-sidebar .byline:before, .no-sidebar .byline:after,
+	.no-sidebar .posted-on:before,
+	.no-sidebar .posted-on:after,
+	.no-sidebar .comments-link:before,
+	.no-sidebar .comments-link:after,
+	.no-sidebar .edit-link:before,
+	.no-sidebar .edit-link:after {
+		margin: 0;
+		content: "";
+	}
 }
 
 /*--------------------------------------------------------------
