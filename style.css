@@ -1347,6 +1347,10 @@ button.dropdown-toggle {
 	margin: 0 0 1.5em;
 }
 
+.extra {
+	display: none;
+}
+
 /* Styling for Meta on single post with no sidebar */
 .no-sidebar .entry-meta {
 	margin-top: 1.5em;
@@ -1381,6 +1385,9 @@ button.dropdown-toggle {
 	.no-sidebar .edit-link:after {
 		margin: 0;
 		content: "";
+	}
+	.no-sidebar .extra {
+		display: inline;
 	}
 }
 

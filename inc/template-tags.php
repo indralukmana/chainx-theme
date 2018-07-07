@@ -89,7 +89,7 @@ if ( ! function_exists('chainx_edit_link') ):
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
+			'<span class="edit-link"> <span class="extra">Admin</span>',
 			'</span>'
 		);
 	}
@@ -102,7 +102,7 @@ if ( ! function_exists('chainx_post_comments') ):
 
 	function chainx_post_comments(){
 		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<span class="comments-link"> <span class="extra">Discussion</span>';
 			comments_popup_link(
 				sprintf(
 					wp_kses(

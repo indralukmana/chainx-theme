@@ -88,6 +88,10 @@
 	margin: 0 0 1.5em;
 }
 
+.extra {
+	display: none;
+}
+
 /* Styling for Meta on single post with no sidebar */
 
 .no-sidebar {
@@ -125,6 +129,10 @@
 				margin: 0;
 				content: "";
 			}
+		}
+
+		.extra {
+			display: inline;
 		}
 
 	}
