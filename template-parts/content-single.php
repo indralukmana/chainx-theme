@@ -32,7 +32,11 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php chainx_post_thumbnail(); ?>
+	<?php if (has_post_thumbnail()) { ?>
+		<figure class='featured-image full-bleed'>
+			<?php chainx_post_thumbnail(); ?>
+		</figure>
+	<?php } ?>
 
 	<section class="post-content">
 
