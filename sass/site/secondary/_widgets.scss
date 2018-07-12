@@ -51,3 +51,130 @@
 	margin-bottom: .5em;
 	font-size: 1.4em;
 }
+
+.widget_archive li {
+	color: cornflowerblue;
+}
+
+.widget_categories .children {
+	padding-top: 0;
+}
+
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget_search input[type="search"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: .5em 1em;
+	border-radius: 0;
+}
+
+.widget_pages .children,
+.widget_nav_menu .sub-menu {
+	padding-top: 0;
+	padding-bottom: .5em;
+}
+
+.widget_pages,
+.widget_nav_menu {
+	a {
+		display: block;
+		padding: 1em 0;
+		border-bottom: 1px dashed blue;
+
+		&:hover,
+		&:focus {
+			border-bottom: 1px solid blue;
+		}
+	}
+
+	li {
+		padding: 0;
+	}
+}
+
+.widget_recent_comments {
+
+	li {
+		line-height: 1.3em;
+		padding-bottom: .5em;
+	}
+
+	a:hover,
+	a:focus {
+		padding-left: 0;
+	}
+
+}
+
+.widget_rss li {
+	margin-bottom: 1em;
+}
+
+.widget li a.rsswidget {
+	padding-right: .5em;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.rss-date,
+.widget_rss cite {
+	color: #333;
+	font-size: .8em;
+}
+
+.rssSummary {
+	padding: .5em 0;
+	font-family: $font__serif;
+	font-size: .8em;
+	line-height: 1.4em;
+}
+
+.widget_calendar {
+	font-weight: 400;
+
+	caption {
+		padding: .5em 0;
+		font-size: 1em;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	thead {
+		background: transparent;
+		color: black;
+
+		th {
+			border-bottom-width: 2px;
+		}
+	}
+
+	td {
+		padding: .2em;
+		font-size: .8em;
+		text-align: center;
+		background: white;
+		border: 1 px solid hsl(0, 0%, 80%);
+	}
+
+	th {
+		border: none;
+		text-align: center;
+	}
+
+	.pad {
+		background: #eaeaea;
+	}
+
+	a {
+		font-weight: 900;
+		text-decoration: none;
+	}
+}
+
+.textwidget {
+	font-size: 80%;
+	line-height: 1.3em;
+}
