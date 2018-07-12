@@ -34,7 +34,7 @@
 
 	<?php if (has_post_thumbnail()) { ?>
 		<figure class='featured-image full-bleed'>
-			<?php chainx_post_thumbnail(); ?>
+			<?php chainx_post_thumbnail('chainx-full-bleed'); ?>
 		</figure>
 	<?php } ?>
 
