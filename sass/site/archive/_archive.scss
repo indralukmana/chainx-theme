@@ -28,3 +28,23 @@
         }
     }
 }
+
+.continue-reading {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    a {
+        display: block;
+        background: lightblue;
+        padding: .5em 1em;
+        font-size: 90%;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            color: white;
+            background: $color__interactive;
+        }
+    }
+}

@@ -1459,6 +1459,25 @@ button.dropdown-toggle {
 	}
 }
 
+.continue-reading {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.continue-reading a {
+	display: block;
+	background: lightblue;
+	padding: .5em 1em;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.continue-reading a:focus, .continue-reading a:hover {
+	color: white;
+	background: blue;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
