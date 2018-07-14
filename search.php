@@ -10,10 +10,7 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ): ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
@@ -23,6 +20,13 @@ get_header();
 					?>
 				</h1>
 			</header><!-- .page-header -->
+			
+	<?php endif; ?>
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		<?php if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */
