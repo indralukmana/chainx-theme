@@ -48,3 +48,17 @@
         }
     }
 }
+
+.index-image {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        &:hover > img,
+        &:focus > img {
+            opacity: .7;
+        }
+    }
+}

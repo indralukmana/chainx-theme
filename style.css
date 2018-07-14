@@ -1483,6 +1483,16 @@ button.dropdown-toggle {
 	background: blue;
 }
 
+.index-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.index-image a:hover > img,
+.index-image a:focus > img {
+	opacity: .7;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
