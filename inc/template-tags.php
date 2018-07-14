@@ -200,3 +200,11 @@ if ( ! function_exists( 'chainx_excerpt_more') ):
 	
 	add_filter('excerpt_more', 'chainx_excerpt_more');
 endif;
+
+if ( ! function_exists( 'chainx_excerpt_length') ):
+	function chainx_excerpt_length( $length ){
+		return 111;
+	}
+
+	add_filter( 'excerpt_length', 'chainx_excerpt_length');
+endif;
