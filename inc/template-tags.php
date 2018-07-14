@@ -192,3 +192,11 @@ if ( ! function_exists( 'chainx_post_navigation') ):
 		));
 	}
 endif;
+
+if ( ! function_exists( 'chainx_excerpt_more') ):
+	function chainx_excerpt_more( $more ){
+		return $more = '...';
+	}
+	
+	add_filter('excerpt_more', 'chainx_excerpt_more');
+endif;
