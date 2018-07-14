@@ -39,8 +39,11 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
-
+			the_posts_pagination( array(
+				'prev_text' => __('Newer', 'chainx'),
+				'next_text' => __( 'Older', 'chainx' ),
+				'before_page_number' => '<span class="screen-reader-text">' . __('Page ', 'chainx') . '</span>',
+			));
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
