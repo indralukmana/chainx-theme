@@ -1312,7 +1312,8 @@ button.dropdown-toggle {
 }
 
 .entry-meta {
-	font-size: 90%;
+	font-size: 60%;
+	margin: 1em;
 }
 
 .entry-meta a {
@@ -1325,9 +1326,13 @@ button.dropdown-toggle {
 	border-bottom: 3px solid;
 }
 
-.byline::after,
-.posted-on::after,
-.comments-link::after {
+.byline::after {
+	content: "|";
+	margin: 0 .5em;
+}
+
+.post-edit-link::before,
+.comments-link::before {
 	content: "|";
 	margin: 0 .5em;
 }
