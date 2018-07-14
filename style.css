@@ -1471,7 +1471,8 @@ button.dropdown-toggle {
 	background: skyblue;
 }
 
-.archive-view .post {
+.archive-view .post,
+.archive-view .page {
 	position: relative;
 	background: white;
 }
