@@ -1495,6 +1495,23 @@ button.dropdown-toggle {
 	.archive-view.has-sidebar .widget-area {
 		width: 30%;
 	}
+	.archive-view.has-sidebar .page-header {
+		width: 100%;
+		-ms-flex: 1 0 100%;
+		    flex: 1 0 100%;
+	}
+}
+
+.page-header {
+	font: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.page-title {
+	margin: 0 0 .5em;
+}
+
+.archive-descriptio {
+	margin: -1em 0 2em;
 }
 
 .continue-reading {
