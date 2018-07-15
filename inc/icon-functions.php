@@ -131,7 +131,10 @@ function chainx_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	if ( 'social' === $args->theme_location ) {
 		foreach ( $social_icons as $attr => $value ) {
 			if ( false !== strpos( $item_output, $attr ) ) {
-				$item_output = '<a href="' . $item->url . '">' . chainx_get_svg( array( 'icon' => esc_attr( $value ) ) ) . '</a>';
+				$item_output = '<a href="' . $item->url . '">' . 
+								'<span class="screen-reader-text">' . __($value, 'chainx') . '</span>' .
+								chainx_get_svg( array( 'icon' => esc_attr( $value ) ) ) .
+								'</a>';
 			}
 		}
 	}
