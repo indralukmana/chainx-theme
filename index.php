@@ -43,8 +43,14 @@ get_header();
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => __('Newer', 'chainx'),
-				'next_text' => __( 'Older', 'chainx' ),
+				'prev_text' => chainx_get_svg( array(
+													'icon' => 'arrow-left',
+													'title' => 'Left arrow'
+												) ) . __('Newer', 'chainx'),
+				'next_text' => __( 'Older', 'chainx' ) . chainx_get_svg( array(
+															'icon' => 'arrow-right',
+															'title' => 'Right arrow'
+														) ),
 				'before_page_number' => '<span class="screen-reader-text">' . __('Page ', 'chainx') . '</span>',
 			));
 
