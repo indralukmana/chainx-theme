@@ -18,12 +18,16 @@ get_header();
 			?>
 		</header><!-- .page-header -->
 
-	<?php endif; ?>
+	<?php 
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+			return;
+		endif; 
+	?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */
@@ -44,11 +48,6 @@ get_header();
 				'next_text' => __( 'Older', 'chainx' ),
 				'before_page_number' => '<span class="screen-reader-text">' . __('Page ', 'chainx') . '</span>',
 			));
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
 
 		</main><!-- #main -->
