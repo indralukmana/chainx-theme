@@ -26,6 +26,11 @@ function chainx_body_classes( $classes ) {
 		$classes[] = 'has-sidebar';
 	}
 
+	// Add a class for page widget
+	if ( is_active_sidebar('page-1') ){
+		$classes[] = 'has-page-sidebar';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'chainx_body_classes' );

@@ -14,9 +14,13 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php chainx_post_thumbnail(); ?>
+	<?php if (has_post_thumbnail()) { ?>
+		<figure class='featured-image full-bleed'>
+			<?php chainx_post_thumbnail('chainx-full-bleed'); ?>
+		</figure>
+	<?php } ?>
 
-	<div class="entry-content">
+	<div class="entry-content post-content">
 		<?php
 		the_content();
 
@@ -25,7 +29,6 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
@@ -49,4 +52,10 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+
+		</div><!-- .entry-content -->
+
+
+		<?php get_sidebar('page'); ?>
+
 </article><!-- #post-<?php the_ID(); ?> -->
