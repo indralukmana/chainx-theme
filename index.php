@@ -48,11 +48,7 @@ get_header();
 				'before_page_number' => '<span class="screen-reader-text">' . __('Page ', 'chainx') . '</span>',
 			));
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+		
 		?>
 
 		</main><!-- #main -->
@@ -61,3 +57,9 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+
+else :
+
+	get_template_part( 'template-parts/content', 'none' );
+
+endif;
