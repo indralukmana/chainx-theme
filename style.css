@@ -1502,7 +1502,7 @@ button.dropdown-toggle {
 	.archive-view.has-sidebar .content-area {
 		width: 60%;
 	}
-	.archive-view.has-sidebar .widget-area {
+	.archive-view.has-sidebar #secondary {
 		width: 30%;
 	}
 	.archive-view.has-sidebar .page-header {
