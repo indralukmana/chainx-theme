@@ -95,3 +95,33 @@
     border-style: solid;
     box-shadow: -1px 2px 2px hsla(0, 0%, 10%, .1);
 }
+
+.search,
+.error-404 {
+    .page-content {
+        margin-bottom: 2em;
+        padding: 1em 2em;
+        font-family: $font__sans;
+        color: white;
+        background: $color__interactive;
+    }
+
+    input[type="search"] {
+        padding: .3em;
+    }
+
+    input[type="submit"] {
+        border-color: white;
+        
+        color: black;
+        background: white;
+
+        &:focus,
+        &:hover {
+            color: white;
+            background: blueviolet;
+        
+
+        }
+    }
+}
