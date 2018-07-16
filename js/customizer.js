@@ -39,4 +39,14 @@
 			}
 		} );
 	} );
+
+	// Header and footer background color
+	wp.customize( 'theme_background_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-header, .site-footer' ).css( {
+				'background-color': to
+			} );		
+		} );
+	} );
+	
 } )( jQuery );
