@@ -1214,7 +1214,7 @@ button.dropdown-toggle {
 }
 
 .toggled-on ul,
-.sub-menu.toggled-on {
+ul.children.toggled-on {
 	display: block;
 }
 
