@@ -25,6 +25,30 @@ function chainx_customize_register( $wp_customize ) {
 			'render_callback' => 'chainx_customize_partial_blogdescription',
 		) );
 	}
+
+	/*
+	* Custom customizer: background color for header and footer
+	*/
+
+	$wp_customize->add_setting( 'theme_background_color', array(
+		'default' => '#0099ff',
+		'transport' => 'postMessage',
+		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_hex_color'
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'theme_background_color',
+			array(
+				'label' => __( 'Background color for header and footer', 'chainx' ),
+				'section' => 'colors',
+				'settings' => 'theme_background_color'
+			)
+		)
+	);
+
 }
 add_action( 'customize_register', 'chainx_customize_register' );
 
