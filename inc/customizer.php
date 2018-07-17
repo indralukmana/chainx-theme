@@ -72,8 +72,52 @@ function chainx_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_section( 'theme_options',
+		array(
+			'title' 	=> __( 'Theme Options', 'chainx' ),
+			'priority'	=> 95,
+			'capability'	=> 'edit_theme_options',
+			'description'	=> __( 'Change how much a post is displayed on index and archive pages', 'chainx')
+		)
+	);
+
+	// Create settings for porst preview lenght
+	$wp_customize->add_setting( 'post_length_setting',
+		array(
+			'default'			=> 'excerpt',
+			'type'				=> 'theme_mod',
+			'sanitize_callback'	=> 'chainx_sanitize_post_length',
+			'transport'			=> 'postMessage'
+		)
+	);
+
+	$wp_customize-> add_control( 'chainx_post_length_control',
+		array(
+			'type' 		=> 'radio',
+			'label'		=> __( 'Index/archive displays', 'chainx' ),
+			'section'	=> 'theme_options',
+			'choices'	=> array(
+				'excerpt'		=> __( 'Excerpt (default)', 'chainx' ),
+				'full-content'	=> __( 'Full content', 'chainx')
+			),
+			'settings'	=> 'post_length_setting'
+		)
+	);
+
 }
 add_action( 'customize_register', 'chainx_customize_register' );
+
+/**
+ * Sanitize the post length setting choice.
+ * If something wrong choose excerpt as the default choice
+ */
+function chainx_sanitize_post_length( $choice ){
+	if( ! in_array( $choice, array('excerpt', 'full-content') ) ){
+		$choice = 'excerpt';
+	}
+
+	return $choice;
+}
 
 /**
  * Render the site title for the selective refresh partial.
