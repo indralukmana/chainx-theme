@@ -82,7 +82,12 @@ if ( ! function_exists( 'chainx_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-	}
+
+		/**
+		 * Styles for the tinymce editor
+		 */
+		add_editor_style( array( 'inc/tinymce-editor.css', chainx_fonts_url()) );
+}
 endif;
 add_action( 'after_setup_theme', 'chainx_setup' );
 
