@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-Theme Name: Chainx Theme
+Theme Name: Chainx
 Theme URI: https://github.com/indralukmana/chainx-theme
 Author: Indra Lukmana
 Author URI: http://www.indralukmana.com
@@ -1755,6 +1755,10 @@ ul.children.toggled-on {
 
 .comment-content a {
 	word-wrap: break-word;
+}
+
+.bypostauthor {
+	background-color: beige;
 }
 
 /*--------------------------------------------------------------
